@@ -5,7 +5,7 @@ from helper_function import create_prompt, initialize_model, get_model_output, l
 
 # Load API key from config
 config = load_config()
-api_key = config.get("api_key")
+api_key = st.secrets["GOOGLE_API_KEY"]
 model_name = config.get("model", "gemini-2.5-flash")
 
 # Initialize the model
