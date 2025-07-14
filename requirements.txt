@@ -1,4 +1,4 @@
-torch==2.3.0
+torch
 transformers==4.41.2
 sentence-transformers==2.7.0
 chromadb==0.4.24
