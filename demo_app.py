@@ -1,8 +1,5 @@
 import streamlit as st
 import time
-import sys
-import pysqlite3
-sys.modules["sqlite3"] = pysqlite3
 
 from helper_function import (
     create_prompt,
