@@ -46,8 +46,25 @@ model_name = st.sidebar.selectbox(
 
 is_bert = model_name == "BERT"
 # Disable RAG toggle if BERT is selected
-rag_toggle_state = False if is_bert else st.sidebar.toggle("🔄 Enable RAG (for prompt models only)", value=False)
+rag_toggle_state = False if is_bert else st.sidebar.toggle("🔄 Enable RAG (for prompt models only)", value=False, key="rag_toggle")
 top_k = st.sidebar.slider("Top K retrieved examples (RAG)", 1, 10, 5) if not is_bert else None
+
+st.markdown(
+    """
+    <style>
+    /* Target the Streamlit toggle switch (requires inspecting the DOM) */
+    div[data-testid="stToggle"] > label div[role="switch"][aria-checked="true"] {
+        background-color: green !important;  /* Green when ON */
+    }
+
+    /* Optional: make the slider thumb also green */
+    div[data-testid="stToggle"] > label div[role="switch"][aria-checked="true"]::before {
+        background-color: white !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # --- INPUT FORM ---
 with st.form("part_input_form"):
