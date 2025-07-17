@@ -34,80 +34,80 @@ You are an AI model that classifies each part into exactly one of the Allowed Ca
 using information such as description, manufacturer, and raw categories.
 
 **Allowed Categories**:
-Adhesive, Cable tie, Connector, Connector kit, Connector accessories, Backshell, Backshell adapter, Backshell strain relief clamp, Cable support sleeve, Cavity plug, Connector contact, Connector insert, Connector jam nut, Connector Band Clamp, Connector dummy stowage, Connector Grommet, Connector Wedge Lock, Contact member, End cap, Gasket, Hardware, Hose clamp, Keying Pin, Mounting clip, Boot, Safety wire, Wire seal, Shield split support ring, Shield band, Shrink boot, Spacer, Split Ring, Strain relief accessory, Tinel Lock Ring, Device, Device with 2 axial leads, Fixing device, Label, Part selection, Part selection by filter, Part selection from set, Segment/bundle materials, Cable, Flat ribbon cable, Shielded cable, Coaxial cable, Differential pair cable, Triaxial cable, Cable gland, Cable/wire connecction, Insulation piercing connector, Shield connector (splice), Solder sleeve device, Splice (Inline), Ferrite, Filler, Fishnet, Grommet, Lacing tape, Protective covering, Convoluted tube, Overbraid, Shrink tube, Shrink tube marker sleeve, Sleeving, Expando sleeve, Fire protection sleeve, Shrink transition, Wire, Tape, Terminal lug, Contact terminal, Ferrule Terminal, Ring Terminal, Spade Terminal, Tool, Automated crimp tool, Banding tool, Connector contact insertion/removal tool, Connector contact insertion tool, connector contact removal tool, Contact retention test tool, Crimp tool, Crimp tool positioner, Latch disengaging tool, Printer, Torque adapter, Unknown
+['automated crimp tool', 'backshell', 'cable', 'cavity plug', 'connector', 'connector contact', 'connector contact insertion/removal tool', 'crimp tool', 'crimp tool positioner', 'shielded cable', 'shrink tube', 'wire', 'wire seal']
 
 
 Here are some labeled examples:
 
 **Example 1**
-- Description: ::Maximum Bond Krazy Glue, 0.18 oz
-  Manufacturer: KRAZY GLUE
-  Raw Categories: Glue, Adhesives, Applicators | Tapes, Adhesives, Materials
+- Description: 1.5 Ton Battery-Powered Open Frame Crimp Tool for Use with Y Dies, Crimp copper and aluminum cable 26 to 10 AWG with DMCÂ® "Y" Dies (M22520/5-XX and others), Head rotates 350Â°
+  Manufacturer: DANIELS MANUFACTURING (DMC)
+  Raw Categories: Automated crimp tool
 Answer:
-Adhesive
+automated crimp tool
 
 **Example 2**
-- Description: 9 Position D-Sub Receptacle, Female Sockets Connector::D-SUB SMT 9PIN STRAIGHT FEMALE,
-  Manufacturer: HARTING
-  Raw Categories: Connectors, Interconnects | D-Sub Connector Assemblies | D-Sub Connector Assemblies | D-Sub Connector Assemblies | D-Sub, D-Shaped Connectors
+- Description: Circular MIL Spec Backshells Multi-Con-X Extra Large Backshell .400-.430 OD Cable
+  Manufacturer: SWITCHCRAFT
+  Raw Categories: Connectors, Interconnects > Circular Connectors > Backshells and Cable Clamps > Circular MIL Spec Backshells
 Answer:
-Connector
+backshell
 
 **Example 3**
-- Description: Connector Backshell, Adapter 1 1/5-18 UNEF 24::ADAPTER
-  Manufacturer: TE CONNECTIVITY
-  Raw Categories: Backshells and Cable Clamps | Backshells and Cable Clamps | Circular Connectors | Connectors, Interconnects
+- Description: 20 AWG, 4C, Unshielded Cable, Communication and Control, Multiconductor, Unshielded, PVC insulation, -20Â°C to 80Â°C, 300 V
+  Manufacturer: ALPHA WIRE
+  Raw Categories: Not specified
 Answer:
-Backshell
+cable
 
 **Example 4**
-- Description: Adapter Coaxial Connector BNC Plug, Male Pin To BNC Plug, Male Pin 50 Ohms::BNC (M-M)
-  Manufacturer: POMONA ELECTRONICS
-  Raw Categories: Coaxial Connector (RF) Adapters | Coaxial Connector (RF) Adapters | Coaxial Connectors (RF) | Connectors, Interconnects
+- Description: CAVITY PLUG, WHITE
+  Manufacturer: YAZAKI
+  Raw Categories: Not specified
 Answer:
-Backshell adapter
+cavity plug
 
 **Example 5**
-- Description: Sealing Plug, PBT GF30, White, Size 12/16, -55 – 125 °C [-67 – 257 °F] Operating Temperature, DEUTSCH
-  Manufacturer: TE CONNECTIVITY
-  Raw Categories: Cavity plug
+- Description: Minitek 89947 series, Receptacle, Black, 50 Cavity
+  Manufacturer: AMPHENOL
+  Raw Categories: Connector
 Answer:
-Cavity plug
+connector
 
 **Example 6**
-- Description: Pin, Outer Contact Contact Coax Tin Crimp::CONN PIN OUTER CONTACT CRIMP TIN
-  Manufacturer: JAE ELECTRONICS
-  Raw Categories: Coaxial Connector (RF) Contacts | Coaxial Connector (RF) Contacts | Coaxial Connector (RF) Contacts | Coaxial Connectors (RF) | Coaxial Connectors (RF) | Connectors, Interconnects | Connectors, Interconnects
+- Description: Pin Contact 6 AWG Size 4 Crimp Silver::CONTACT PIN 6AWG CRIMP SILVER
+  Manufacturer: AMPHENOL
+  Raw Categories: Connectors, Interconnects > Circular Connectors > Circular Connector Contacts
 Answer:
-Connector contact
+connector contact
 
 **Example 7**
-- Description: HE-006-FSS
-  Manufacturer: TE CONNECTIVITY
-  Raw Categories: Connectors | Power Connectors | Rectangular Contact Inserts | Rectangular Power
+- Description: Extraction, Removal & Insertion Tools INSERTION/EXTRACTION
+  Manufacturer: DANIELS MANUFACTURING (DMC)
+  Raw Categories: Connector contact insertion/removal tool
 Answer:
-Connector insert
+connector contact insertion/removal tool
 
 **Example 8**
-- Description: Automotive Connector Locks & Position Assurance, Secondary Lock, Orange, PBT, 3 Position, -55 – 125 °C [-67 – 257 °F], DEUTSCH DTM
-  Manufacturer: TE CONNECTIVITY
-  Raw Categories: Connector Wedge Lock
+- Description: MinitekÂ® 2.00mm (26,28,30 AWG) CRIMP HAND TOOL
+  Manufacturer: AMPHENOL
+  Raw Categories: Crimp tool
 Answer:
-Connector Wedge Lock
+crimp tool
 
 **Example 9**
-- Description: Connector Cap (Cover), Shell For HD Series::HD1 SERIES LVDS PLUG COVER SHELL
-  Manufacturer: JAE ELECTRONICS
-  Raw Categories: Connectors, Interconnects | Connectors, Interconnects | Rectangular Connector Accessories | Rectangular Connector Accessories | Rectangular Connector Accessories | Rectangular Connector Accessories | Rectangular Connector Accessories | Rectangular Connectors | Rectangular Connectors
+- Description: Crimpers / Crimping Tools DIE FOR EBC320 70MM CONT
+  Manufacturer: ANDERSON POWER PRODUCTS
+  Raw Categories: Crimp tool positioner
 Answer:
-End cap
+crimp tool positioner
 
 **Example 10**
-- Description: Gasket, Closed Cell Sponge, Black, 12 Position Receptacle, -57 – 107 °C [-70 – 225 °F] Operating Temperature, DEUTSCH DT/DTM
-  Manufacturer: TE CONNECTIVITY
-  Raw Categories: Gasket
+- Description: 80 (40 Pair Twisted) Conductor Multi-Pair Cable Gray 28 AWG Foil, Braid 1000.0' (304.8m)::MULTI-PAIR 80CON 28AWG GRY
+  Manufacturer: 3M
+  Raw Categories: Not specified
 Answer:
-Gasket
+shielded cable
 
 ---
 
@@ -322,8 +322,8 @@ def get_model_output_BERT(manufacturer, description, raw_category):
     Get model output using BERT for sequence classification.
     """
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    model = BERTClassifier(num_classes=88)
-    model.load_state_dict(torch.load('best_model.pt', map_location=torch.device('cpu')))
+    model = BERTClassifier(num_classes=13)
+    model.load_state_dict(torch.load('best_model_13_100.pt', map_location=torch.device('cpu')))
 
     if manufacturer == "":
         manufacturer = "Not provided"
